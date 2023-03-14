@@ -132,7 +132,7 @@ textarea {
 
    .photo-card .text {
     display: grid;
-    grid-template-rows: 92px minmax(0, 1fr);
+    grid-template-rows: auto 1fr;
    }
 
    .photo-card .text h2, .photo-card .text p {
@@ -230,8 +230,43 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 1200px) {
   /* Style adjustments for viewports that meet the condition */
+  /* .photo-card {
+    width: 481px;
+    height: 970px;
+  } */
+
+  .photo-card {
+    height: auto;
+    width: 481px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    border: 1px solid #eee;
+  }
+  
+  .img-container {
+    grid-row-end: 1;
+    border-bottom: 1px solid #eee;
+    border-left: none;
+  }
+  
+  .photo-card .text {
+    display: grid;
+    grid-template-rows: auto 1fr;
+  }
+  
+  .photo-card .text h2, .photo-card .text p {
+    padding: 16px;
+    margin: 0;
+  }
+  
+  .photo-card .text h2 {
+    font-size: 3rem;
+    border-bottom: 1px solid #eee;
+  }
+
 }
 
 @media print,
