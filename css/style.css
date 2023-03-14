@@ -83,6 +83,69 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+  body {
+    background-color: #333333;
+    color: #C7C7C7;
+    font-family: 'Bebas Neue', cursive;
+  }
+
+   section {
+    height: 100vh;
+    border-bottom: 1px solid #00B4A9;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+   }
+
+   /* HEADER */
+
+   .header h1 {
+    color: #F68B3E;
+    font-size: 8rem;
+    line-height: 0.95;
+    letter-spacing: -15px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+   }
+
+   .header p {
+    margin-top: 0;
+   }
+
+   /* PHOTOS */
+
+   .photo-card {
+    height: 432px;
+    width: 970px;
+    display: grid;
+    grid-template-columns: 481px minmax(0, 1fr);
+    grid-template-rows:  1;
+    border: 1px solid #eee
+   }
+
+   .img-container {
+    grid-row-end: 2;
+    border-right: 1px solid #eee;
+   }
+
+   .photo-card .text {
+    display: grid;
+    grid-template-rows: 92px minmax(0, 1fr);
+   }
+
+   .photo-card .text h2, .photo-card .text p {
+    padding: 16px;
+    margin: 0;
+   }
+
+   .photo-card .text h2 {
+    font-size: 3rem;
+    border-bottom: 1px solid #eee;
+   }
+
+
 
 /* ==========================================================================
    Helper classes
